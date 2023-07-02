@@ -1,11 +1,14 @@
-import React,{ useEffect , useState } from "react";
+import React,{  useState } from "react";
 
-function Form({oldpizza, updatePizza}){
-    const [newPizza, setNewPizza] = useState({oldpizza})
+function Form({ onAddPizza}){
+    const [newPizza, setNewPizza] = useState({
+        name:" ",
+        image:" ",
+        ingredients:" ",
+        size:" ",
+        likes:0,
+    })
 
-    useEffect(()=>{
-        setNewPizza(oldpizza)
-    },oldpizza)
     function handleChange(event){
         console.log(event.target.value)
         setNewPizza({...newPizza, 
@@ -15,19 +18,26 @@ function Form({oldpizza, updatePizza}){
 
     function handleSubmitForm(event){
         event.preventDefault()
-        fetch(`http://localhost:3000/pizzas/${newPizza.id}`,{
-            method:'PATCH',
+        const addNewPizza = {
+            name: newPizza.name,
+            image: newPizza.image,
+            ingredients: newPizza.ingredients,
+            size:newPizza.size,
+            likes: 0
+        }
+        fetch(`http://localhost:3000/pizzas/`,{
+            method:'POST',
             headers:{
                 "Content-Type":"application/json"
             },
-            body:JSON.stringify(newPizza)
+            body:JSON.stringify(addNewPizza)
         })
         .then(res=>res.json())
-        .then(pizza=>updatePizza(pizza))
+        .then(pizza=>onAddPizza(pizza))
     }
     return(
-        <from className="add-pizza-form" onSubmit={handleSubmitForm}>
-            <div className="form-row">
+        <div className="container">
+        <form className="add-pizza-form" onSubmit={handleSubmitForm}>
                     <input
                         type="text"
                         name="name"
@@ -51,20 +61,25 @@ function Form({oldpizza, updatePizza}){
                 placeholder="please enter pizza ingredients"
                 className="input-text"
                 />
-                <div className="col">
+                <br />
                     <select className="form-control" 
                             name = "size"
-                            value={newPizza.size}
+                            defaultValue={"default"}
                             onChange={handleChange}>
+                                <option value="default" disabled>--Select Pizza Size--</option>   
                                 <option value="Small">Small</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Large">Large</option>
                     </select>
-                </div>
-               
-
-            </div>
-        </from>
+                    <input 
+                    type = "submit"
+                    name = "submit"
+                    value = "Add a New Pizza"
+                    className="submit"
+                    />
+            </form>
+        </div>
+        
 
 
     )

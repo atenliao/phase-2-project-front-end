@@ -7,39 +7,26 @@ import Form from './Form'
 
 function App(){
     const [pizzas, setPizzas] = useState([])
-    const [oldpizza, setoldpizza] = useState({
-        "name":" ",
-        "image":" ",
-        "ingredients":" ",
-        "size":" ",
-        "likes":0
-    })
+   
     useEffect(()=>{
         fetch("http://localhost:3000/pizzas")
         .then(res=>res.json())
         .then(pizza=>setPizzas(pizza))
     },[])
     
-
-
-function updatePizza(updatedPizza){
-    setPizzas([...pizzas].map((pizza)=>{
-        if(pizza.id === updatedPizza.id){
-            return updatedPizza
-        }else{
-            return pizza
-        }
-    }))
+function addPizza(pizza){
+    setPizzas([...pizzas, pizza])
 }
+
     return (
         <div>
             <NavBar />
             <Switch>
                 <Route path='/PizzaList'>
-                    <PizzaList pizzas={pizzas}/>
+                    <PizzaList pizzas={pizzas} setPizzas={setPizzas}/>
                 </Route>
                 <Route path='/Form'>
-                    <Form oldpizza={oldpizza} updatePizza={updatePizza}/>
+                    <Form onAddPizza={addPizza}/>
                 </Route>
                 <Route path='/'>
                     <Home />
