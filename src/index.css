@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.pizza-image {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}

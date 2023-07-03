@@ -30,13 +30,13 @@ function PizzaList({ pizzas,setPizzas }) {
             <PizzaEdit oldpizza={oldpizza} updatePizza={updatePizza} />
             <table className="table table-list">
                 <thead>
-                    <tr>
+                    <tr className="text-center">
                         <th scope="col">Image</th>
                         <th scope="col">Topping Name</th>
                         <th scope="col">Size</th>
                         <th scope="col">Characteristic Ingredients</th>
                         <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
+                        {/* <th scope="col">Delete</th> */}
                     </tr>
                 </thead>
                 <tbody>

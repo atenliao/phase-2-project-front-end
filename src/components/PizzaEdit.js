@@ -31,43 +31,47 @@ function PizzaEdit({oldpizza, updatePizza}){
     return(
         <form onSubmit={handleSubmitForm}>
             <div className="form-row">
-                <div className="col-5">
+                <div className="mb-3 row">
+                    <label className="col-sm-2 col-form-label text-center">Pizza Name</label>
                     <input 
-                        className="form-control"
+                        className="form-control w-50"
                         type="text"
                         name="name"
                         value = {newPizza.name}
                         onChange={handleChange}
                     />
                 </div>
-                <div className="col">
+                <div className="mb-3 row">
+                    <label className="col-sm-2 col-form-label text-center">Image URL</label>
                     <input 
-                    className="form-control"
+                    className="form-control w-50"
                     type = "text"
                     name = "image"
                     value = {newPizza.image}
                     onChange={handleChange}
                     />
                 </div>
-                <div className="col">
+                <div className="mb-3 row">
+                    <label className="col-sm-2 col-form-label text-center">Ingredients</label>
                     <input
-                    className="form-control"
+                    className="form-control w-50"
                     type="text"
                     name="ingredients"
                     value={newPizza.ingredients}
                     onChange={handleChange}
                     />
                 </div>
-                <div className="col">
-                <select className="form-control" name = "size" defaultValue={"default"} onChange={handleChange}>
+                <div className="mb-3 row">
+                    <label className="col-sm-2 col-form-label text-center">Pizza Size</label>
+                <select className="form-select w-50" name = "size" defaultValue={"default"} onChange={handleChange}>
                                 <option value ="default" disabled>--choose pizza size--</option>
                                 <option value="Small">Small</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Large">Large</option>
                     </select>
                 </div>
-                <p >your pizza size is {newPizza.size}</p>
-                <div>
+                <p className="text-center">your pizza size is {newPizza.size}</p>
+                <div className="mb-3 row">
                     <button type="submit" className="btn btn-success">update</button>
                 </div>
             </div>

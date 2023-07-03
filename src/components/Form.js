@@ -36,33 +36,45 @@ function Form({ onAddPizza}){
         .then(pizza=>onAddPizza(pizza))
     }
     return(
-        <div className="container">
-        <form className="add-pizza-form" onSubmit={handleSubmitForm}>
+        
+        <form onSubmit={handleSubmitForm}>
+                <div className="mb-3 row">
+                    <label className="col-sm-2 col-form-label text-center">Pizza Name</label>
                     <input
                         type="text"
                         name="name"
                         onChange={handleChange}
                         placeholder="Enter Pizza Topping"
-                        className="input-text"
+                        className="form-control w-50"
+                        id="ex3"
                     />
-                    <br />
+                </div>
+                <div className="mb-3 row">
+            <label className="col-sm-2 col-form-label text-center">Image URL </label>
             <input 
                 type = "text"
                 name = "image"
                 onChange={handleChange}
                 placeholder="Enter a pizza image URL..."
-                className="input-text"
+                className="form-control w-50"
+                id="ex3"
                 />
-                <br />
+               </div>
+               <div className="mb-3 row">
+            <label className="col-sm-2 col-form-label text-center" >Ingredients </label>
             <input
                 type= "text"
                 name= "ingredients"
                 onChange={handleChange}
                 placeholder="please enter pizza ingredients"
-                className="input-text"
+                className="form-control w-50"
+                id="ex3"
                 />
-                <br />
-                    <select className="form-control" 
+                </div>
+                <div className="mb-3 row">
+                    <label className="col-sm-2 col-form-label text-center" >Pizza Size</label>
+                    <select className="form-select w-50"
+                            id="ex3" 
                             name = "size"
                             defaultValue={"default"}
                             onChange={handleChange}>
@@ -71,14 +83,17 @@ function Form({ onAddPizza}){
                                 <option value="Medium">Medium</option>
                                 <option value="Large">Large</option>
                     </select>
-                    <input 
+                    </div>
+                    <div  className="mb-3 row">
+                    <button 
                     type = "submit"
                     name = "submit"
                     value = "Add a New Pizza"
-                    className="submit"
-                    />
+                    className="btn btn-primary "
+                    >
+                    Submit</button>
+                    </div>
             </form>
-        </div>
         
 
 
