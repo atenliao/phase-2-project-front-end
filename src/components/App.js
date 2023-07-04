@@ -9,7 +9,7 @@ function App(){
     const [pizzas, setPizzas] = useState([])
    
     useEffect(()=>{
-        fetch("http://localhost:3000/pizzas")
+        fetch(`${process.env.REACT_APP_API_URL}/pizzas`)
         .then(res=>res.json())
         .then(pizza=>setPizzas(pizza))
     },[])
@@ -17,16 +17,16 @@ function App(){
 function addPizza(pizza){
     setPizzas([...pizzas, pizza])
 }
-
     return (
         <div>
             <NavBar />
             <Switch>
-                <Route path='/PizzaList'>
-                    <PizzaList pizzas={pizzas} setPizzas={setPizzas}/>
-                </Route>
+                
                 <Route path='/Form'>
                     <Form onAddPizza={addPizza}/>
+                </Route>
+                <Route path='/PizzaList'>
+                    <PizzaList pizzas={pizzas} setPizzas={setPizzas}/>
                 </Route>
                 <Route path='/'>
                     <Home />

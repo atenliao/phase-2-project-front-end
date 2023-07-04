@@ -25,7 +25,7 @@ function Form({ onAddPizza}){
             size:newPizza.size,
             likes: 0
         }
-        fetch(`http://localhost:3000/pizzas/`,{
+        fetch(`${process.env.REACT_APP_API_URL}/pizzas/`,{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"
