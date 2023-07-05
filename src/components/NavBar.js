@@ -14,7 +14,7 @@ function NavBar(){
                     Home
                 </NavLink>
                 <NavLink className = "nav-item nav-link fs-4" to='/pizzalist' >Pizzas</NavLink>
-                <NavLink className = "nav-item nav-link fs-4" to ='Form' >
+                <NavLink className = "nav-item nav-link fs-4" to ='/Form' >
                     Form
                 </NavLink>
                 </div>
