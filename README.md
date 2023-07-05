@@ -21,3 +21,7 @@ npm install // install npm
 npm run dev // run json server
 ```
 
+## Access the Pizza Webpage
+You can access the Supper Pizza website front and : https://startling-muffin-1c0499.netlify.app/pizzalist 
+
+and access back end json server: https://pizza-back-end.onrender.com/ 
