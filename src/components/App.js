@@ -21,11 +21,11 @@ function addPizza(pizza){
         <div>
             <NavBar />
             <Switch>
-                <Route path='/PizzaList'>
-                    <PizzaList pizzas={pizzas} setPizzas={setPizzas}/>
-                </Route>
                 <Route path='/Form'>
                     <Form onAddPizza={addPizza}/>
+                </Route>
+                <Route path='/PizzaList'>
+                    <PizzaList pizzas={pizzas} setPizzas={setPizzas}/>
                 </Route>
                 <Route path='/'>
                     <Home />
