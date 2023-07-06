@@ -1,9 +1,24 @@
 import React from "react";
+import pizza from "../asset/pizza.png"
 
 function Home(){
     return(
         <div>
-            <h1>Supper Pizza</h1>
+            <div className="div_home_image">
+                <img src={pizza}  alt="pizza" className="home_image"/>
+            </div>
+           <div className="home_paragraph">
+            <p>
+            The Supper Pizza website lists pizzas and you can upload or edit any pizza in website you want.
+            In the Website you can use form to upload any pizza you like with name, Characteristic ingredients, and picture, and then it will be show
+            in the pizza site and be listed. After posting a pizza, if you want to change some Characteristic ingredients, you click
+            edit button to edit a pizza size, Characteristic ingredients, and any you like. 
+            </p>
+            <p>
+                The website is used to show pizza with size, Characteristic ingredients, and photo, and we can test the fetch GET, POST, PATCH method work in React.
+                welcome anyone to upload your pizza. 
+            </p>
+           </div>
         </div>  
     )
 }

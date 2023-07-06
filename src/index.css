@@ -14,9 +14,25 @@ code {
 
 
 .pizza-image {
+ 
   justify-self: center;
   height: 12rem;
   width: auto;
+}
+
+.div_home_image {
+  float: left;
+  width: 50%;
+}
+.home_image {
+  
+  height: 500px;
+  width: auto;
+}
+.home_paragraph {
+  float:right;
+  margin-right: auto;
+  width: 45%;
 }
 
 td {
