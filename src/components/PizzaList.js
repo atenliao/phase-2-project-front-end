@@ -25,6 +25,10 @@ function PizzaList({ pizzas,setPizzas }) {
     function editPizza(oldpizza) {
         setoldpizza(oldpizza)
     }
+    function deletePizza(id){
+        const displayPizzas = pizzas.filter((pizza)=>pizza.id !== id)
+        setPizzas(displayPizzas)
+    }
     return (
         <>
             <PizzaEdit oldpizza={oldpizza} updatePizza={updatePizza} />
@@ -41,7 +45,7 @@ function PizzaList({ pizzas,setPizzas }) {
                 </thead>
                 <tbody>
                     {
-                        pizzas.map((pizza) => <Pizza key={pizza.id} pizza={pizza} editPizza={editPizza} />)
+                        pizzas.map((pizza) => <Pizza key={pizza.id} pizza={pizza} editPizza={editPizza} onDeletePizza={deletePizza}/>)
                     }
                 </tbody>
             </table>

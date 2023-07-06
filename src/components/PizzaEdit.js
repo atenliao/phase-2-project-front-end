@@ -17,7 +17,7 @@ function PizzaEdit({oldpizza, updatePizza}){
 
     function handleSubmitForm(event){
         event.preventDefault()
-        fetch(`http://localhost:3000/pizzas/${newPizza.id}`,{
+        fetch(`${process.env.REACT_APP_API_URL}/pizzas/${newPizza.id}`,{
             method:'PATCH',
             headers:{
                 "Content-Type":"application/json"
