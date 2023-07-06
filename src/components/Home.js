@@ -15,8 +15,8 @@ function Home(){
             edit button to edit a pizza size, Characteristic ingredients, and any you like. 
             </p>
             <p>
-                The website is used to show pizza with size, Characteristic ingredients, and photo, and we can test the fetch GET, POST, PATCH method work in React.
-                welcome anyone to upload your pizza. 
+                The website is used to show pizza with size, Characteristic ingredients, and photo, and you can use fetch GET, POST, PATCH, and DELETE methods to edit website pizza content.
+                we are welcome anyone to upload your pizza. 
             </p>
            </div>
         </div>  
