@@ -47,3 +47,15 @@ td {
 table {
   margin: 0 auto;
 }
+
+.container {
+  padding: 80px 120px;
+}
+textarea {
+  resize: none;
+}
+.div_contact{
+  position: relative;
+  height: 500px;
+  bottom: 0px;
+}
