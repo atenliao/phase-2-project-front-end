@@ -21,17 +21,19 @@ function Home() {
                         The website is used to show pizza with size, Characteristic ingredients, and photo, and you can use fetch GET, POST, PATCH, and DELETE methods to edit website pizza content.
                         we are welcome anyone to upload your pizza.
                     </p>
-                </div>
-            </div>
-            <div className="container" id="contact">
-                <h3 className="text-center">Contact</h3>
-                <div className="row">
-                    <div className="col-sm-4">
+                    <h3 className="text-center">Contact</h3>
+                    <div className="row">
+                    <div >
                         <p>Feel free to Contact us!!!</p>
                         <p><span className="glyphicon glyphicon-map-marker"></span>San Francisco, CA</p>
                         <p><span className="glyphicon glyphicon-phone"></span>Phone: +1 (415)111-1111</p>
                         <p><span className="glyphicon glyphicon-envelope"></span>Email: mail@vetmo.net</p>
                     </div>
+                </div>
+            </div>
+            <div className="container" id="contact">
+                
+                    
                     {/* <form >
                         <div className="col-sm-8">
 
