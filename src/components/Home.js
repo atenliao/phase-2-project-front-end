@@ -8,7 +8,7 @@ function Home(){
                 <img src={pizza}  alt="pizza" className="home_image"/>
             </div>
            <div className="home_paragraph">
-            <p>
+            <p className="font-weight-normal">
             The Supper Pizza website lists pizzas and you can upload or edit any pizza in website you want.
             In the Website you can use form to upload any pizza you like with name, Characteristic ingredients, and picture, and then it will be show
             in the pizza site and be listed. After posting a pizza, if you want to change some Characteristic ingredients, you click
