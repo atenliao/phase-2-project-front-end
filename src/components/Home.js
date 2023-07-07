@@ -4,6 +4,7 @@ import pizza from "../asset/pizza.png"
 function Home(){
     return(
         <div>
+            <div>
             <div className="div_home_image">
                 <img src={pizza}  alt="pizza" className="home_image"/>
             </div>
@@ -19,7 +20,31 @@ function Home(){
                 we are welcome anyone to upload your pizza. 
             </p>
            </div>
-        </div>  
+           </div>
+           <div className="container" id="contact">
+                <h3 className="text-center">Contact</h3>
+                <p className="text-center"> <em>Welcone to the Pizza Website</em></p>
+                <div className="col-md-4">
+                    <p>Feel free to Contact us!!!</p>
+                    <p><span className="glyphicon glyphicon-map-marker"></span>San Francisco, CA</p>
+                    <p><span className="glyphicon glyphicon-phone"></span>Phone: +1 (415)111-1111</p>
+                    <p><span className="glyphicon glyphicon-envelope"></span>Email: mail@vetmo.net</p>
+                </div>
+                <div className="col-md-8">
+                    <div className="row">
+                        <div className="col-sm-6 form-group">
+                            <input className="form-control" id="email" name="email" placeholder="Email" type="email" required/>
+                        </div>
+                    </div>
+                    <textarea className="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br/>
+                    <div className="row">
+                        <button className="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+           </div>
+        </div> 
+
     )
 }
 
