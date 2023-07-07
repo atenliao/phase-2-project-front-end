@@ -21,8 +21,10 @@ code {
 }
 
 .div_home_image {
+  position: relative;
   float: left;
-  width: 50%;
+  width: 45%;
+  padding: 0 10px;
 }
 .home_image {
   
@@ -30,9 +32,12 @@ code {
   width: auto;
 }
 .home_paragraph {
-  float:right;
+  position: relative;
+  padding: 100px 100px 100px 100px;
+  float:left;
+  text-align: left;
   margin-right: auto;
-  width: 45%;
+  width: 55%;
 }
 
 td {
