@@ -35,3 +35,7 @@ It is a simple webpage for pizza and display any pizza you like.
 ## Json server:
 you can access my website json server in the link:
 https://github.com/atenliao/phase-2-project-json-server 
+
+## webside display video
+video: https://www.youtube.com/watch?v=VrZcseI2rcs 
+You can watch the video to know how to use features to upload, edit, and delete pizza in the website. 
