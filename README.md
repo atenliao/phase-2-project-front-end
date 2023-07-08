@@ -1,6 +1,6 @@
 ### Project Name: Supper Pizza Web 
-restarant users can post their pizzas in on the web to show pizzas' photo and characteristic ingredients to customes,User can add and edit any pizza in website. 
-In the website app, you can use a form we provided to post any pizza you like. 
+Restarant users can post their pizzas on the web to show pizzas' photo and  characteristic ingredients to customes; however, User can add and edit any pizza in the website, and anyone could read its infomation 
+In the website app, you can use a form we provided to post any pizza you like. After your posting, you also can delete it or edit it whenever. please have a fun to play the webside. 
 
 ### Installation Instruction
 
