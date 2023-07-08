@@ -25,9 +25,9 @@ function Home() {
                     <div className="row">
                     <div >
                         <p>Feel free to Contact us!!!</p>
-                        <p>San Francisco, CA</p>
-                        <p>Phone: +1 (111)111-1111</p>
-                        <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@vetmo.net</p>
+                        <p><i className="bi-geo-alt-fill"></i>&nbsp;San Francisco, CA</p>
+                        <p><i className="bi-telephone-inbound"></i>&nbsp;Phone: +1 (111)111-1111</p>
+                        <p><i className="bi-envelope-fill"></i>&nbsp;Email: mail@vetmo.net</p>
                     </div>
                 </div>
             </div>
