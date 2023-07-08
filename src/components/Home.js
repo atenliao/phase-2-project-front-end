@@ -31,33 +31,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="container" id="contact">
-                
-                    
-                    {/* <form >
-                        <div className="col-sm-8">
-
-                            <div className="row">
-                                <div className="col-sm-6 form-group">
-                                    <input className="form-control" id="name" placeholder="Name" type="text" required />
-                                </div>
-                                <div className="col-sm-6 form-group">
-                                    <input className="form-control" id="email" name="email" placeholder="Email" type="email" required />
-                                </div>
-                            </div>
-                            <textarea className="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                        </div>
-                        <br />
-                        <div className="row">
-                            <div className="col form-group">
-                                <button className="btn btn-primary pull-right" type="submit" value="Submit" >Send</button>
-                            </div>
-                        </div>
-                    </form> */}
-                </div>
             </div>
         </div>
-
     )
 }
 
