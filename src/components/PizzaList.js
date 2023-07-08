@@ -40,7 +40,7 @@ function PizzaList({ pizzas,setPizzas }) {
                         <th scope="col">Size</th>
                         <th scope="col">Characteristic Ingredients</th>
                         <th scope="col">Edit</th>
-                        {/* <th scope="col">Delete</th> */}
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
